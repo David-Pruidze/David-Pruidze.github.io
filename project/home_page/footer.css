@@ -1,0 +1,84 @@
+
+.logo {
+    background: url("assets/logo.png") no-repeat;
+    background-size: auto 100%;
+    width: 200px;
+    height: 65px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #32425C;
+    height: 200px;
+    position: relative;
+    top: 110px;
+}
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer_row,.footer_row_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer_row a {
+    text-decoration: none;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.footer_main_a{
+    color: white;
+}
+.footer_a{
+    color: #FFD180; !important;
+}
+.footer_row_2{
+    width: 100%;
+    background: #293449;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.img_1{
+    background: url("assets/img_1.png") no-repeat;
+    background-size: auto 100%;
+    width: 230px;
+    height: 35px;
+    margin-right: 50px;
+}
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+}
+.vk{
+    background: url("assets/vk.png") no-repeat;
+    background-size: auto 100%;
+    width: 35px;
+    height: 35px;
+}
+.fc{
+    background: url("assets/fc.png") no-repeat;
+    background-size: auto 100%;
+    width: 35px;
+    height: 35px;
+}
+.instagramm{
+    background: url("assets/instagramm.png") no-repeat;
+    background-size: auto 100%;
+    width: 35px;
+    height: 35px;
+}

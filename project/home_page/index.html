@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechnoMart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../catalog/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header__content">
+            <div class="header__menu">
+                <div class="header__logo"></div>
+                <form action="#" method="get">
+                    <label for="search"></label>
+                    <input id="search" type="search" value="Поиск:">
+                    <label for="bookmark"></label>
+                    <input id="bookmark" type="search" value="Закладки: 0">
+                    <label for="basket"></label>
+                    <input id="basket" type="search" value="Корзина: 0">
+                    <button id="order">Оформить заказ</button>
+                </form>
+            </div>
+            <div class="row_my">
+                <div class="header_content">Интернет-магазин строительных материалов
+                    и инструментов для ремонта
+                </div>
+                <div style="position: relative;top: 13.5% ;">
+                    <a href="#" class="header_phone"><h3 style="position: relative; right: -20px">+375-29-192-93-98</h3>
+                    </a>
+                    <span class="phone_address">г. Минск, ул. Б. Конюшенная, д. 19/8</span>
+                </div>
+                <form action="">
+                    <input id="entrance" type="button" value="Войти">
+                    <input id="registration" type="button" value="Регистрация">
+                </form>
+
+            </div>
+            <div class="main">
+                <div class="row_main">
+                    <a href="" class="hover">Главная</a>
+                    <a href="" class="hover">Компания</a>
+                    <div class="dropdown">
+                        <div class="dropbtn"><a href="../catalog/catalog.html">Каталог</a></div>
+                        <div class="dropdown-content">
+                            <div class="dropdown2">
+                                <div class="dropbtn2"><a href="">Инструменты</a></div>
+                                <div class="dropdown-content2">
+                                    <a href="#">Перфораторы</a>
+                                    <a href="#">Болгарки</a>
+                                    <a href="#">Шуруповёрты</a>
+                                </div>
+                            </div>
+                            <div class="dropdown2">
+                                <button class="dropbtn2"><a href="">Материалы</a></button>
+                                <div class="dropdown-content2">
+                                    <a href="#">Лаки и краски</a>
+                                    <a href="#">Дерево</a>
+                                    <a href="#">Металл</a>
+                                </div>
+                            </div>
+                            <div class="dropdown2">
+                                <button class="dropbtn2"><a href="">Техника</a></button>
+                                <div class="dropdown-content2">
+                                    <a href="#">Трактора</a>
+                                    <a href="#">Самосвалы</a>
+                                    <a href="#">Грузовики</a>
+                                </div>
+                            </div>
+                            <div class="dropdown2">
+                                <button class="dropbtn2"><a href="">Достака</a></button>
+                                <div class="dropdown-content2">
+                                    <a href="#">По России</a>
+                                    <a href="#">По Европе</a>
+                                    <a href="#">В Азию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="hover">Новости</a>
+                    <a href="" class="hover">Спецпредложения</a>
+                    <a href="" class="hover">Доставка</a>
+                    <a href="" class="hover">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row_container">
+            <div class="material box">
+                <div class="column_box">
+                    <p class="materials">Материалы</p>
+                    <div class="page">
+                        <a href="#" class="materials_page">На любой вкус</a>
+                    </div>
+                </div>
+                <div class="material_pic"></div>
+                <img src="assets/new.png" class="new" alt="pic"/>
+            </div>
+            <div class="tool box">
+                <div class="column_box">
+                    <p class="tools">Инструменты</p>
+                    <div class="page">
+                        <a href="#" class="tool_page">На все случаи</a>
+                    </div>
+                </div>
+                <div class="drill_pic"></div>
+            </div>
+            <div class="technique box">
+                <div class="column_box">
+                    <p class="techniques">Техника</p>
+                    <div class="page">
+                        <a href="#" class="technique_page">На все случаи</a>
+                    </div>
+                </div>
+                <div class="tractor_pic"></div>
+            </div>
+        </div>
+
+
+        <div class="row_container_2">
+            <div class="big_box">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel1 carousel"></div>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel3 carousel"></div>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel2 carousel"></div>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <a href="#" class="catalog_big_box">Открыть каталог</a>
+            </div>
+            <div class="column_box">
+                <div class="discount box">
+                    <div class="column_box">
+                        <p class="discounts">Cкидки 50%</p>
+                        <div class="page">
+                            <a href="#" class="discount_page">На 350 товаров</a>
+                        </div>
+                    </div>
+                    <div class="discounts_pic"></div>
+                </div>
+                <div class="delivery box">
+                    <div class="column_box">
+                        <p class="deliverys">Доставка</p>
+                        <div class="page">
+                            <a href="#" class="delivery_page">Бесплатно</a>
+                        </div>
+                    </div>
+                    <div class="delivery_pic"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row_container_3">
+            <div class=" main container_3_content">
+                <h3>Популярные товары</h3>
+                <a href="" class="most_popular">Все популярные товары</a>
+            </div>
+        </div>
+        <div class="row_container_2">
+            <div class="box_container_2">
+                <a href="#" class="product">
+                    <img src="assets/bfg_9000.png" height="164" width="184" alt="pic"/>
+                    <span class="BFG ">Перфоратор BOSCH BFG 9000</span>
+                    <span class="old_price">2500Byn</span>
+                    <span class="price">1900 Byn</span>
+                </a>
+            </div>
+            <div class="box_container_2">
+                <a href="#" class="product">
+                    <div class="bfg6000"></div>
+                    <span class="BFG">Перфоратор BOSCH BFG 6000</span>
+                    <span class="old_price">1700 Byn</span>
+                    <span class="price">1100 Byn</span>
+                </a>
+            </div>
+            <div class="box_container_2">
+                <a href="#" class="product">
+                    <div class="bfg3000"></div>
+                    <span class="BFG">Перфоратор BOSCH BFG 3000</span>
+                    <span class="old_price">2000 Byn</span>
+                    <span class="price">1300 Byn</span>
+                </a>
+            </div>
+            <div class="box_container_2">
+                <a href="#" class="product">
+                    <div class="bfg2000"></div>
+                    <span class="BFG">Перфоратор BOSCH BFG 2000</span>
+                    <span class="old_price">1500 Byn</span>
+                    <span class="price">990 Byn</span>
+                </a>
+            </div>
+        </div>
+        <div class="row_container_3">
+            <div class=" main container_3_content">
+                <h3>Популярные производители</h3>
+                <a href="" class="most_popular">Все производители </a>
+            </div>
+        </div>
+        <div class="row_container_2">
+            <div class="box_product">
+                <a href="" class="bosch"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="makita"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="dewalt"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="interskol"></a>
+            </div>
+        </div>
+        <div class="row_container_2">
+            <div class="box_product">
+                <a href="" class="hitachi"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="LG"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="aeg"></a>
+            </div>
+            <div class="box_product">
+                <a href="" class="metabo"></a>
+            </div>
+        </div>
+        <div class="row_container_2 ">
+            <div class="service">
+                <div class="column_container">
+                    <h2>Сервисы</h2>
+                    <p class="service_text">Хороший интернет-магазин отличается от плохого не только ценами!
+                        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                </div>
+                <div class="row_container_2">
+                    <ul>
+                        <li class="delivery_column">Доставка</li>
+                        <li class="delivery_column column_shadow">Гарантия</li>
+                        <li class="delivery_column column_shadow"> Кредит</li>
+                    </ul>
+                    <div class="delivery_text">
+                        <h2 style="font-family: Curium,sans-serif;">Доставка</h2>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                            Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                    </div>
+                    <div class="big_car"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row_container_2">
+            <div class="row_about">
+                <div class="about">
+                    <h2>КОМПАНИЯ «Техномарт»</h2>
+                    <p>Настоящий мужской шоппинг начинается здесь!
+                        Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить
+                        на
+                        гастарбайтерах.
+                    </p>
+                    <p> Мы можем доставить ваш товар в самые отдаленные точки России!
+                        Техномарт работает со многими транспортными компаниями:</p>
+                    <a href="https://www.dellin.ru/" target="_blank" class="line">Деловые линии</a>
+                    <a href="http://www.autotrading.ru/" target="_blank" class="line">Автотрейдинг</a>
+                    <a href="https://www.jde.ru/" target="_blank" class="line">ЖелДорЭкспедиция</a>
+                    <a href="" class="line_cum">Подробнее о компании</a>
+                </div>
+                <div class="about">
+                    <h2>КОНТАКТЫ</h2>
+                    <p>Вы можете забрать товар сами,
+                        заехав в наш офис:</p>
+                    <a href="">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.6537626041732!2d27.680764933928586!3d53.88337541804602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcdc4d3f7e965%3A0xa8c6625e6bd5a8f2!2z0YPQuy4g0J3QtdGB0YLQtdGA0L7QstCwIDQ5LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1630234965084!5m2!1sru!2sby"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_column">
+            <div class="footer_row">
+                <div class="footer_main">
+                    <div class="logo"></div>
+                    <a href="" class="footer_main_a">Главная</a>
+                    <a href="" class="footer_main_a">Компания</a>
+                    <a href="" class="footer_main_a">Каталог</a>
+                    <a href="" class="footer_main_a">Новости</a>
+                    <a href="" class="footer_main_a">Спецпредложения</a>
+                    <a href="" class="footer_main_a">Доставка</a>
+                    <a href="" class="footer_main_a">Контакты</a>
+                </div>
+            </div>
+            <div class="footer_row">
+                <div class="footer_main">
+                    <p style="color: white">г. Минск, ул. Б. Конюшенная, д. 19/8 <br>
+                        +375 29 192 93 98</p>
+                    <a href="" class="footer_a">Материалы</a>
+                    <a href="" class="footer_a">Инструменты</a>
+                    <a href="" class="footer_a">Техника</a>
+                    <a href="" class="footer_a">Спецпредложения</a>
+                </div>
+            </div>
+            <div class="footer_row_2">
+                <div class="img_1"></div>
+                <div class="footer_icon">
+                    <div class="vk"></div>
+                    <div class="fc"></div>
+                    <div class="instagramm"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../catalog/bootstrap-5.1.0-dist/js/bootstrap.js"></script>
+<script>
+</script>
+</body>
+</html>
