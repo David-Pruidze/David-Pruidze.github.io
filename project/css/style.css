@@ -361,7 +361,6 @@ img {
 .user-tools__link--cart::before {
   width: 15px;
   height: 15px;
-
   background-image: url("../img/svg/icon-cart.svg");
 }
 
@@ -377,8 +376,7 @@ img {
   opacity: 0.5;
 }
 
-/* Desc, address, user-nav
-======================================================= */
+
 
 .page-header__desc {
   display: -webkit-box;

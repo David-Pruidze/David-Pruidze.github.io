@@ -2165,22 +2165,27 @@ span.psw {
     position: relative;
     top: -23px;
     right: 24px;
-
 }
 
 .carousel1 {
-    background: url('../img/screwdriver.jpeg') no-repeat;
+    background: url('../img/srew.jpeg') no-repeat;
     background-size: 100%;
+    width: 670px;
+    height: 288px;
 }
 
 .carousel2 {
-    background: url('../img/jackhammer.jpeg') no-repeat;
+    background: url('../img/jack2.jpeg') no-repeat;
     background-size: 100%;
+    width: 670px;
+    height: 288px;
 }
 
 .carousel3 {
-    background: url('../img/img.png') no-repeat;
+    background: url('../img/perforator.png') no-repeat;
     background-size: 100%;
+    width: 670px;
+    height: 288px;
 }
 
 .catalog_big_box {
