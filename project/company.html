@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Интернет-магазин «Техномарт»</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="catalog/bootstrap-5.1.0-dist/css/bootstrap.css">
+</head>
+<body>
+<a class="skip-header hidden" href="#start-of-main">Перейти к основному содержанию</a>
+<header class="page-header">
+
+    <div class="page-header__top-wrap">
+        <div class="page-header__top page-container">
+            <a class="logo logo--index btn-red">Техномарт</a>
+            <form class="search-form" method="get">
+                <label class="search-form__label">
+                    <span class="hidden">Поиск:</span>
+                    <input class="search-form__input input-reset" type="search" name="search" placeholder="Поиск:">
+                </label>
+                <button class="hidden" type="submit">Найти</button>
+            </form>
+            <ul class="user-tools">
+                <li class="user-tools__item">
+                    <a class="user-tools__link user-tools__link--icon user-tools__link--bookmarks" href="#">Закладки:
+                        0</a>
+                </li>
+                <li class="user-tools__item">
+                    <a class="user-tools__link user-tools__link--icon user-tools__link--cart" href="#">Корзина: 0</a>
+                </li>
+                <li class="user-tools__item">
+                    <a class="user-tools__link user-tools__link--order" href="#">Оформить заказ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header__desc page-container">
+        <p class="shop-description">
+            Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
+        </p>
+        <address class="address-header">
+            <a class="address-header__link-tel" href="tel:+375291929398" aria-label="Наш телефон">+375 (29)
+                192-93-98</a>
+            г. Минск, ул. Нестерова, д. 49
+        </address>
+        <div>
+            <button onclick="document.getElementById('id01').style.display='block'" class="login"
+                    style="width:auto;    font: 17px/18px Cuprum, Tahoma, sans-serif; ">Вход
+            </button>
+            <div id="id01" class="modal">
+                <form class="modal-content animate">
+                    <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                  title="Close Modal">×</span>
+                        <img src="../project/img/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Логин</b></label>
+                        <input id="uname" type="text" placeholder="Введите логин" name="uname" required>
+
+                        <label for="psw"><b>Пароль</b></label>
+                        <input id="psw" type="password" placeholder="Введите пароль" name="psw" required>
+
+                        <button type="submit" class="login">Вход</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отмена
+                        </button>
+                        <span class="psw">Забыли <a href="#">пароль?</a></span>
+                    </div>
+                </form>
+            </div>
+            <button onclick="document.getElementById('id02').style.display='block'" class="login"
+                    style="width:auto;    font: 17px/18px Cuprum, Tahoma, sans-serif; ">Регистрация
+            </button>
+            <div id="id02" class="modal">
+                <form class="modal-content animate">
+                    <div class="container">
+                        <label for="email"><b>Email</b></label>
+                        <input id="email" type="text" placeholder="Введите Email" name="email" required>
+
+                        <label for="psw2"><b>Пароль</b></label>
+                        <input id="psw2" type="password" placeholder="Введите Пароль" name="psw" required>
+
+                        <label for="psw-repeat"><b>Повторите Пароль</b></label>
+                        <input id="psw-repeat" type="password" placeholder="Повторите Пароль" name="psw-repeat"
+                               required>
+                        <button type="submit" class="login">Зарегистрировать</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                                class="cancelbtn">Отмена
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav class="site-nav page-container">
+        <ul class="site-nav__list">
+            <li class="site-nav__item" aria-current="page">
+                <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Компания</a>
+            </li>
+            <li class="site-nav__item">
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="catalog-perforator.html" style="color: white">Каталог</a></div>
+                    <div class="dropdown-content">
+                        <div class="dropdown2">
+                            <div class="dropbtn2"><a href="catalog-perforator.html">Инструменты</a></div>
+                            <div class="dropdown-content2">
+                                <a href="catalog-perforator.html">Перфораторы</a>
+                                <a href=>Болгарки</a>
+                                <a href=>Шуруповёрты</a>
+                            </div>
+                        </div>
+                        <div class="dropdown2">
+                            <button class="dropbtn2"><a href="">Материалы</a></button>
+                            <div class="dropdown-content2">
+                                <a href="#">Лаки и краски</a>
+                                <a href="#">Дерево</a>
+                                <a href="#">Металл</a>
+                            </div>
+                        </div>
+                        <div class="dropdown2">
+                            <button class="dropbtn2"><a href="">Техника</a></button>
+                            <div class="dropdown-content2">
+                                <a href="#">Трактора</a>
+                                <a href="#">Самосвалы</a>
+                                <a href="#">Грузовики</a>
+                            </div>
+                        </div>
+                        <div class="dropdown2">
+                            <button class="dropbtn2"><a href="">Доставка</a></button>
+                            <div class="dropdown-content2">
+                                <a href="#">По России</a>
+                                <a href="#">По Европе</a>
+                                <a href="#">В Азию</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Новости</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Спецпредложения</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="page-main" id="start-of-main">
+    <section class="promo page-container">
+        <h3 style="margin-bottom: 2.5rem;">О нас</h3>
+        <div>
+            <p>История компании началась в 2007 году с открытия ИП. В то время&nbsp;склад находился в гараже площадью 36
+                квадратов. Понадобилось достаточно много лет для наладки прямых поставок с заводов, существенного
+                расширения ассортимента и автопарка. Теперь площадь склада составляет 5000 м.кв., постоянно в наличии
+                несколько тысяч
+                позиций строительных и отделочных материалов, в&nbsp;собственном автопарке&nbsp;11&nbsp;грузовых
+                машин.</p>
+            <p>Наша цель: сохранять лидерство в сегменте онлайн-продаж стройматериалов в РБ, оставаться компанией с
+                душой, приносить пользу клиентам, сотрудникам, а также людям, которые нуждаются в помощи.</p>
+            <p style="text-align: right;"><strong><em>Благодарю Вас и всего самого Доброго!<br>
+                Директор Стасевич А.П.</em></strong></p>
+            <p>Склад и магазин находятся по адресу:<strong> г. Минск, ул. Уручская, 12А/3</strong>. <strong>Работаем без
+                выходных с 8.30 до 18.00</strong>.</p>
+            <p><strong>Наши преимущества:</strong></p>
+            <ul>
+                <li><p>Собственный склад 4000 м.кв и поэтому всегда низкие&nbsp;цены, акции, скидки.</p></li>
+                <li><p>Прямые поставки с заводов-производителей. Все товары на складе сертифицированы. Опыт работы –&nbsp;13&nbsp;лет.</p>
+                </li>
+                <li><p>И склад, и магазин находятся в одном месте и работают без выходных.</p></li>
+                <li><p>Наша служба доставки – это собственный автопарк, возможность получить заказ быстрее&nbsp;и в
+                    достойном виде.</p></li>
+                <li><p>Цены на сайте всегда актуальны и обновляются автоматически. Вы можете быть в этом уверены.</p>
+                </li>
+                <li><p>На сайте действует система автоматических скидок от количества. Есть&nbsp;скидочные карты –&nbsp;серебряные
+                    (3%)&nbsp;и золотые (5%).</p></li>
+                <li><p>Количество наших клиентов продолжает расти и мы делаем все, чтобы оправдать Ваше доверие. <span
+                        style="font-size:14px;"><strong>Спасибо, что выбрали нас!</strong></span></p></li>
+            </ul>
+        </div>
+        <h3 style="margin-bottom: 2.5rem">Благотворительность</h3>
+        <p>Наша организация, по мере сил, будет рада помочь нуждающимся организациям. Таким как: детские дома, духовные
+            учреждения. Мы можем помочь строительными материалами и их доставкой. Всё&nbsp;это безвозмездно и полностью
+            за наш счёт.</p>
+        <p>По счастливой случайности узнали об этом монастыре и начали помогать ему. Решили снять это видео для тех
+            людей, у которых есть вопросы на которые нет ответа, у которых сложный период в жизни или нужна помощь.</p>
+        <p>Лавришевский монастырь — светлое место, куда может приехать каждый. С&nbsp;семьей либо один. Пообщаться с
+            монахами, подумать, остаться наедине, поработать и пожить. Здесь никто не заставляет Вас верить либо не
+            верить — это место созданное для людей и помощи им, душевного покоя и созерцания красоты природы.</p>
+        <p>Сайт монастыря — <a href="http://lavra.by" rel="nofollow" target="_blank">lavra.by</a>. Там можно найти
+            необходимую контактную информацию.</p>
+        <div class="s-res-video-640">
+            <div class="s-res-video">
+                <iframe allowfullscreen="" frameborder="0" height="360" src="https://www.youtube.com/embed/6T_UhTjrSNY"
+                        width="640"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- ===== FOOTER =============================== -->
+
+<footer class="page-footer page-footer--index">
+
+    <div class="page-footer__main page-container">
+        <div class="page-footer__main-column">
+            <a class="logo logo--index logo--wide btn-red">Техномарт</a>
+            <address class="address-footer">
+                г. Минск, ул. Нестерова, д. 49 <br>
+                +375&nbsp;(29)&nbsp;192-93-98
+            </address>
+        </div>
+        <nav class="site-nav-footer">
+            <ul class="site-nav-footer__list">
+                <li class="site-nav-footer__item">
+                    <a class="site-nav-footer__link" href="#">Компания</a>
+                </li>
+                <li class="site-nav-footer__item">
+                    <a class="site-nav-footer__link" href="#">Новости</a>
+                </li>
+                <li class="site-nav-footer__item">
+                    <a class="site-nav-footer__link" href="catalog-perforator.html">Каталог</a>
+                </li>
+                <li class="site-nav-footer__item">
+                    <a class="site-nav-footer__link" href="#">Доставка</a>
+                </li>
+                <li class="site-nav-footer__item">
+                    <a class="site-nav-footer__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="site-nav-add__list">
+                <li class="site-nav-add__item">
+                    <a class="site-nav-add__link" href="#">Материалы</a>
+                </li>
+                <li class="site-nav-add__item">
+                    <a class="site-nav-add__link" href="#">Техника</a>
+                </li>
+                <li class="site-nav-add__item">
+                    <a class="site-nav-add__link" href="#">Инструмент</a>
+                </li>
+                <li class="site-nav-add__item">
+                    <a class="site-nav-add__link" href="#">Спецпредложения</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-footer__add-wrap">
+        <div class="page-footer__add page-container">
+            <p class="copyright" style="visibility: hidden">
+                &copy; 2010&ndash;2017 Компания &laquo;Техномарт&raquo;
+                Все права защищены
+            </p>
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href="#">
+                        <span class="hidden">Мы во Вконтакте</span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--fb" href="#">
+                        <span class="hidden">Мы в Фейсбуке</span>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--insta" href="#">
+                        <span class="hidden">Мы в Инстраграме</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<script src="js/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script>
+
+    const modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+    const registration = document.getElementById('id02');
+
+
+    window.onclick = function (event) {
+        if (event.target === registration) {
+            registration.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
